@@ -1,0 +1,11 @@
+.DarkTheme {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column; }
+  .DarkTheme button {
+    width: 130px; }
+  .DarkTheme img {
+    width: 150px; }
+
+/*# sourceMappingURL=DarkTheme.css.map */
