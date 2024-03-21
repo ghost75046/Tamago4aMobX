@@ -1,16 +1,10 @@
-import React, {useState,useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import darkKnight from "../images/darkKnight.png";
 import lightKnight from "../images/lightKnight.jpg";
-import'./DarkTheme.css'
-
-
-
+import './DarkTheme.css'
 
 
 const DarkTheme = () => {
-
-
-
 
 
     const [currentKnight, setCurrentKnight] = useState(darkKnight)
@@ -21,15 +15,13 @@ const DarkTheme = () => {
         } else {
             setCurrentKnight(darkKnight)
         }
-        // console.log(currentKnight)
+
     }
 
 
-    let buttonTitle = "darkMode demo"
-    const batmanText =<p>листай ниже и<br/>жми на кнопку))</p>
+    const buttonTitle = "darkMode demo"
+    const batmanText = <p>листай ниже и<br/>жми на кнопку))</p>
     let lastScrollTop = 0;
-
-
 
 
     const [currentBatmanText, setCurrentBatmanText] = useState(batmanText)
@@ -49,9 +41,10 @@ const DarkTheme = () => {
 
             lastScrollTop = scrollTop;
         }
-        document.addEventListener("wheel",onScroll);
+
+        document.addEventListener("wheel", onScroll);
         return () => {
-            document.removeEventListener("wheel",onScroll);
+            document.removeEventListener("wheel", onScroll);
         }
     }, []);
 
@@ -63,7 +56,7 @@ const DarkTheme = () => {
     return (
         <div className="DarkTheme">
 
-        <button onClick={switchKnight}>{buttonTitle}</button>
+            <button onClick={switchKnight}>{buttonTitle}</button>
 
             {currentBatmanText}
 
@@ -71,7 +64,6 @@ const DarkTheme = () => {
 
         </div>
     )
-
 
 
 }

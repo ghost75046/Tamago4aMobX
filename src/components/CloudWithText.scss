@@ -1,16 +1,15 @@
-.cloudWithText{
-  /*background-color: orange;*/
+.cloudWithText {
   background-image: url("../images/comicsCloud.png");
-  //закомментил то, что было выше из-за ошибки
   background-size: cover;
   width: 250px;
   height: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
-  p{
+
+  p {
     font-size: 26px;
-    text-align:center;
+    text-align: center;
   }
 
 }

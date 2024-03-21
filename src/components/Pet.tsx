@@ -1,8 +1,6 @@
 import React from "react";
-import  "./Pet.css";
-import Delya from "../images/Delya.png";
-
-
+import "./Pet.css";
+import Delya from "../images/DelyaGif2.gif";
 
 
 const Pet = () => {

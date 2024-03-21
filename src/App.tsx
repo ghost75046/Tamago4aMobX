@@ -11,7 +11,7 @@ const App = () => {
         }}>
 
             <MyEgg/>
-            <DarkTheme />
+            <DarkTheme/>
         </div>
     )
 }

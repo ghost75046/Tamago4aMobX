@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-//import state, {feeder, kakaCleaner,playing, darkTheme} from "./redux/state";
+
 import App from "./App";
 
 //const root = ReactDOM.createRoot(document.getElementById("root"));

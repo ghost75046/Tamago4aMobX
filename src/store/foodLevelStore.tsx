@@ -1,6 +1,5 @@
 import {observable} from "mobx";
-import HungryItem from "../components/stats/Food/HungryItem";
-import shava from "../images/shaverma.png";
+import FoodItem from "../components/stats/Food/FoodItem";
 
 import React from "react";
 import crispsCrunch from "../audio/crispsCrunch.mp3";
@@ -9,26 +8,25 @@ import cloudWithTextStore from "./cloudWithTextStore";
 import emotionStore from "./emotionStore";
 
 
-
 const foodLevelStore = observable({
-    foodLevel: [<HungryItem shavaImg={shava} key="1"/>],
-    foodLevelIncrement(){
+    foodLevel: [<FoodItem key="1"/>],
+    foodLevelIncrement() {
 
-        if(foodLevelStore.foodLevel.length < 6){
-         foodLevelStore.foodLevel.push(<HungryItem shavaImg={shava} key="1"/>);
-        foodLevelStore.eatingSound.play()
+        if (foodLevelStore.foodLevel.length < 6) {
+            foodLevelStore.foodLevel.push(<FoodItem key="1"/>);
+            foodLevelStore.eatingSound.play()
             cloudWithTextStore.textInCloudChange("Спасибо за еду!")
             emotionStore.changeEmotion()
-        if(kakaLevelStore.kakaLevel.length < 7) {
-            setTimeout(kakaLevelStore.kakaLevelIncrement, 5000);
-            emotionStore.changeEmotion()
-        }
-        }else {
+            if (kakaLevelStore.kakaLevel.length < 7) {
+                setTimeout(kakaLevelStore.kakaLevelIncrement, 5000);
+                emotionStore.changeEmotion()
+            }
+        } else {
             cloudWithTextStore.textInCloudChange('Я не голоден')
         }
     },
-    eatingSound : new Audio(crispsCrunch),
-    makingHungry()  {
+    eatingSound: new Audio(crispsCrunch),
+    makingHungry() {
 
         if (foodLevelStore.foodLevel.length > 1) {
             foodLevelStore.foodLevel.pop()

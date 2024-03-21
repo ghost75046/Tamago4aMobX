@@ -7,10 +7,8 @@ import kakaLevelStore from "./kakaLevelStore";
 import playingStore from "./playingStore";
 
 
-
-
 const emotionStore = observable({
-currentEmotion:normal,
+    currentEmotion: normal,
     changeEmotion() {
         if (foodLevelStore.foodLevel.length < 3 || kakaLevelStore.kakaLevel.length > 1 || !playingStore.ifPlayedRecently) {
             emotionStore.currentEmotion = sad

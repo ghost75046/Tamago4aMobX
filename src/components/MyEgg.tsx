@@ -9,7 +9,6 @@ import Emotion from "./stats/Emotion";
 import eggStore from "../store/eggStore";
 
 
-
 const MyEgg = () => {
     return (
         <div className='myEgg' style={{
@@ -21,7 +20,6 @@ const MyEgg = () => {
             height: '795px',
             margin: '0 auto'
         }}>
-            {/*<MyComponent/>*/}
             <CloudWithText/>
             <Food/>
             <Pet/>

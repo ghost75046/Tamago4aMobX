@@ -1,14 +1,16 @@
 import React from "react";
 import "./KakaItem.css";
+import kaka from "../../../images/kaka.png"
 
 
-const KakaItem = (props:any) => {
+const KakaItem = () => {
     return (
         <div className='kakaItem'>
-            <img src={props.kaka} alt="#"/>
+            <img src={kaka} alt="#"/>
         </div>
     )
 }
+
 
 export default KakaItem
 

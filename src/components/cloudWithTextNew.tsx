@@ -6,7 +6,7 @@ const newCloud = () => {
 
     return (<div>
         <p>{store.textInCloud}</p>
-        <button onClick={() =>store.textInCloudChange('test')}>changeCloud</button>
+        <button onClick={() => store.textInCloudChange('test')}>changeCloud</button>
 
     </div>)
 }
