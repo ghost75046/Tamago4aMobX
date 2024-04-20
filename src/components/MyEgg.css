@@ -4,10 +4,12 @@
   background-size: cover, 350px;
   background-repeat: no-repeat;
   background-position: 0 0, 200px 230px;
-  /*100px bottom*/
   width: 700px;
-  height: 795px;
-  /*background-color: green;*/
-  /*border: solid black;*/ }
+  height: 795px; }
+
+.textAndWeather {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 /*# sourceMappingURL=MyEgg.css.map */
