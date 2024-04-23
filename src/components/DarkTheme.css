@@ -2,7 +2,10 @@
   height: 150px;
   width: 150px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-left: 50px;
+  margin-bottom: 150px;
+  align-self: flex-end; }
   .DarkTheme button {
     width: 130px; }
   .DarkTheme img {

@@ -7,7 +7,7 @@ import CloudWithText from "./CloudWithText";
 import Pet from "./Pet";
 import Emotion from "./stats/Emotion";
 import eggStore from "../store/eggStore";
-import Weather from "./stats/Weather/Weather";
+
 
 
 const MyEgg = () => {
@@ -21,10 +21,10 @@ const MyEgg = () => {
             height: '795px',
             margin: '0 auto'
         }}>
-            <div className='textAndWeather'>
+
             <CloudWithText/>
-                <Weather/>
-            </div>
+
+
             <Food/>
             <Pet/>
             <Kaka/>
