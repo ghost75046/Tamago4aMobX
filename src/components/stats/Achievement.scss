@@ -1,13 +1,41 @@
 .achievementContainer {
   width: 300px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  border: solid black 1px;
 }
 
 .achievementIcon {
   width: 150px;
   margin-bottom: 15px;
+border: solid black 1px;
+
+}
+
+.hover-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 200px;
+  margin-top: 120px;
+
+}
+
+.achievementContainer:hover  .hover-text {
+
+  visibility: visible;
 
 
 }
+
+
+

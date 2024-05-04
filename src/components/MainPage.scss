@@ -1,0 +1,36 @@
+.mainDiv {
+  padding-top: 50px;
+  height: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.fon {
+  width: 350px;
+}
+
+.eggAndFact {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Первая колонка занимает оставшееся пространство, вторая автоматически расширяется под контент */
+  height: 100vh; /* 100% высоты окна браузера */
+}
+
+
+
+.item1 {
+  /* Положение элемента 1 в центре экрана */
+  justify-self: center;
+  align-self: center;
+
+}
+
+.item2 {
+  /* Положение элемента 2 в правой части экрана */
+  justify-self: end; /* end - выравнивание по правому краю */
+  align-self: center;
+  width: 300px;
+}
+
+
+

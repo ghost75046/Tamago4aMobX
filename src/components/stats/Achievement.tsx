@@ -10,18 +10,21 @@ const Achievements = () => {
     let progressbarPercent = 100
     //управление насыщенностью иконки
     let saturatePercent = 1
-return (<div className="achievementContainer" >
+return (<div className="achievementContainer">
 
         <img className="achievementIcon" src={achievementCleaner} alt="" style={{
             filter: `saturate(${saturatePercent})`
         }}/>
-        <div className="progressBar"  style={{
+        <div className="progressBar" style={{
 
             width: `${progressbarPercent}%`,
             height: '30px',
-          backgroundColor: 'green'
+            backgroundColor: 'green'
         }}>
 
+        </div>
+        <div className="hover-text">
+            <p>Убрать 10 каках</p>
         </div>
     </div>
 )

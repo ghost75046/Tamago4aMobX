@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css'
-import MyEgg from "./components/MyEgg";
-import DarkTheme from "./components/DarkTheme";
-import CatFact from "./components/stats/Weather/CatFact";
 import Achievements from "./components/stats/Achievement";
+import { Route, Routes, Link } from 'react-router-dom';
+import MainPage from "./components/MainPage";
+import NotFound from "./components/NotFound";
+
 
 
 
@@ -12,20 +13,23 @@ const App = () => {
 
     return (
         <div>
-    <div className='mainDiv' style={{
-            backgroundColor: `antiquewhite`
-        }}>
-            <DarkTheme/>
-           <MyEgg />
-            <CatFact/>
+        <header className='navBar'>
+            <Link className='navBarLink' to="/">Игра   </Link>
+            <Link className='navBarLink' to="/achievements">Достижения   </Link>
+            <Link className='navBarLink' to="/about">Несуществующая старница</Link>
+        </header>
+
+                <Routes>
+                    <Route  path="/" element={<MainPage />} />
+                    <Route  path="/achievements" element={<Achievements />} />
+                    <Route  path="*" element={<NotFound />} />
+                </Routes>
 
 
         </div>
-            <div className='achievments'>
-                <Achievements />
-            </div>
 
-        </div>
+
+
 
 
     )
