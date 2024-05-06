@@ -3,11 +3,7 @@ import './MainPage.css'
 import MyEgg from "./MyEgg";
 import DarkTheme from "./DarkTheme";
 import CatFact from "./stats/Weather/CatFact";
-
-
-
-
-
+import Popup from "./test/Popup"
 
 const MainPage = () => {
 
@@ -17,18 +13,12 @@ const MainPage = () => {
                 backgroundColor: `antiquewhite`
             }}>
                 <DarkTheme/>
-                <MyEgg />
+                <MyEgg/>
                 <CatFact/>
-
-
             </div>
-
-
+                <Popup/>
 
         </div>
-
-
-
 
 
     )

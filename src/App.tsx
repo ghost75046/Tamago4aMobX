@@ -16,7 +16,7 @@ const App = () => {
         <header className='navBar'>
             <Link className='navBarLink' to="/">Игра   </Link>
             <Link className='navBarLink' to="/achievements">Достижения   </Link>
-            <Link className='navBarLink' to="/about">Несуществующая старница</Link>
+            <Link className='navBarLink' to="/about">Несуществующая страница</Link>
         </header>
 
                 <Routes>

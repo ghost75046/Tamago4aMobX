@@ -1,0 +1,26 @@
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+.popup-container.show {
+  display: block;
+}
+
+.popup {
+  max-width: 300px;
+  margin: 0 auto;
+  //text-align: center;
+  display: flex;
+img {
+  margin-right: 15px;
+}
+}

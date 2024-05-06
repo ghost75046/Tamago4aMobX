@@ -10,6 +10,7 @@ const cloudWithTextStore = observable({
     textInCloudDefaulter() {
         cloudWithTextStore.textInCloud = "MurMiay"
     }
+
 })
 
 
