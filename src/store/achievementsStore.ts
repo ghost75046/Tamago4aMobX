@@ -22,6 +22,11 @@ const achievementsStore = observable([
         id: 4,
         title: 'Жажда знаний', //Запросить 10 фактов о котах
         isUnlocked: false
+    },
+    {
+        id: 5,
+        title: 'Кормилец', //Запросить 10 фактов о котах
+        isUnlocked: false
     }
 ])
 

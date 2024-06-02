@@ -1,26 +1,22 @@
-import React, { useState} from 'react';
+import React from 'react';
 import './Popup.css'; // Подключаем файл стилей
 import achievementCleaner from "../../images/achievementCleaner.png"
+
+import achievementsStore from "../../store/popupStore";
+import {observer} from "mobx-react-lite";
+
+
 const Popup = () => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    const showMyAchievement = () =>  {
-
-            setIsVisible(true)
 
 
-            setTimeout(() => {
-            setIsVisible(false);
-        }, 2000)
-        // Время в миллисекундах, через которое окно исчезнет
 
 
-    } // Пустой массив зависимостей, чтобы useEffect выполнился только при монтировании
+
 
     return (
         <div>
-            <button onClick={showMyAchievement}>getAchievement</button>
-        <div className={isVisible ? "popup-container show" : "popup-container"}>
+            <button>getAchievement</button>
+        <div className={ "popup-container " + achievementsStore.isShow }>
             <div className="popup">
                 <img src={achievementCleaner} alt="" style={{height:'60px'}}/>
                 <p>Получено достижение <b>Чистильщик</b></p>
@@ -30,4 +26,4 @@ const Popup = () => {
     );
 };
 
-export default Popup;
+export default observer(Popup)
