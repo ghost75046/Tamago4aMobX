@@ -10,9 +10,9 @@ const GamingButtons = () => {
 
     return (
         <div className='GamingButtons'>
-            <button onClick={foodLevelStore.foodLevelIncrement}>Feed</button>
-            <button id='cleanButton' onClick={kakaLevelStore.kakaCleaner}>Clean</button>
-            <button onClick={playingStore.playing}>Play</button>
+            <button onClick={foodLevelStore.foodLevelIncrement}><b>Feed</b></button>
+            <button id='cleanButton' onClick={kakaLevelStore.kakaCleaner}><b>Clean</b></button>
+            <button onClick={playingStore.playing}><b>Play</b></button>
 
         </div>
 
