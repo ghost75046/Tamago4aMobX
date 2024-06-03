@@ -2,7 +2,7 @@ import React from 'react';
 import './MainPage.css'
 import MyEgg from "./MyEgg";
 import DarkTheme from "./DarkTheme";
-import CatFact from "./stats/Weather/CatFact";
+import CatFact from "./stats/CatFact/CatFact";
 import Popup from "./test/Popup"
 
 const MainPage = () => {
@@ -16,7 +16,7 @@ const MainPage = () => {
                 <MyEgg/>
                 <CatFact/>
             </div>
-                <Popup/>
+            <Popup/>
 
         </div>
 

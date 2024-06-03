@@ -1,7 +1,6 @@
 import {observable} from "mobx";
 
 
-
 const achievementsStore = observable([
     {
         id: 1,

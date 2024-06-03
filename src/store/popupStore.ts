@@ -1,16 +1,14 @@
 import {observable} from "mobx";
 
 
-
-
 const achievementsStore = observable(
     {
         id: 3,
         title: 'Чистильщик', //убрать 10 каках
         isUnlocked: 0,
-        isVisible:false,
-        cleanedKakasCount:0,
-        isShow:'?',
+        isVisible: false,
+        cleanedKakasCount: 0,
+        isShow: '?',
         //isVisible:true,
         showAchievement() {
             achievementsStore.isShow = 'show'
@@ -22,7 +20,7 @@ const achievementsStore = observable(
             console.log('makeIsVisibleFalse')
         },
         isVisibleTimeout() {
-            setTimeout(achievementsStore.makeIsVisibleFalse,2000)
+            setTimeout(achievementsStore.makeIsVisibleFalse, 2000)
             console.log('isVisibleTimeout')
         }
     }

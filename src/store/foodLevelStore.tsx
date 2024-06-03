@@ -9,19 +9,16 @@ import emotionStore from "./emotionStore";
 import achievementsStore from "../store/achievementsStore"
 
 
-
-
-
 const foodLevelStore = observable({
     foodLevel: [<FoodItem key="food0"/>],
-    foodLevelIndex:1,
-    foodLevelKey:'food',
-    foodItemKey:'',
+    foodLevelIndex: 1,
+    foodLevelKey: 'food',
+    foodItemKey: '',
     foodLevelIncrement() {
-        foodLevelStore.foodItemKey =  foodLevelStore.foodLevelKey + ( foodLevelStore.foodLevelIndex + 1)
+        foodLevelStore.foodItemKey = foodLevelStore.foodLevelKey + (foodLevelStore.foodLevelIndex + 1)
         if (foodLevelStore.foodLevel.length < 6) {
 
-            foodLevelStore.foodLevel.push(<FoodItem key={ foodLevelStore.foodItemKey}/>);
+            foodLevelStore.foodLevel.push(<FoodItem key={foodLevelStore.foodItemKey}/>);
             foodLevelStore.foodLevelIndex++
             foodLevelStore.eatingSound.play()
             cloudWithTextStore.textInCloudChange("Спасибо за еду!")
@@ -48,17 +45,17 @@ const foodLevelStore = observable({
             cloudWithTextStore.textInCloudChange("Я голоден")
         }
     },
-    foodItemCount:0,
+    foodItemCount: 0,
     foodItemIncrement() {
         console.log(foodLevelStore.foodItemCount)
         let achievementsStoreIndex
-        foodLevelStore.foodItemCount+=1
-        if (foodLevelStore.foodItemCount ===3) {
+        foodLevelStore.foodItemCount += 1
+        if (foodLevelStore.foodItemCount === 3) {
             for (achievementsStoreIndex in achievementsStore) {
                 if (achievementsStore[achievementsStoreIndex].title == 'Кормилец') {
                     achievementsStore[achievementsStoreIndex].isUnlocked = true
-                        // alert('Celaner')
-                        //popupStore.showAchievement()
+                    // alert('Celaner')
+                    //popupStore.showAchievement()
                     console.log('success')
                     console.log(achievementsStore[2])
                 }

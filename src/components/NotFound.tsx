@@ -2,11 +2,11 @@ import React from "react";
 import backgroundPicture from "../../src/images/NotFound.png"
 
 
-const NotFound= () => {
+const NotFound = () => {
     return (
-<div>
-    <img src={backgroundPicture} alt=""/>
-</div>
+        <div>
+            <img src={backgroundPicture} alt=""/>
+        </div>
     )
 }
 

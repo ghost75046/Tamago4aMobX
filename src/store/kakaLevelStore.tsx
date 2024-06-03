@@ -10,20 +10,20 @@ import achievementsStore from "./popupStore";
 
 const kakaLevelStore = observable({
     kakaLevel: new Array(),
-    kakaLevelIndex:0,
-    kakaLevelKey:'food',
-    kakaItemKey:'',
+    kakaLevelIndex: 0,
+    kakaLevelKey: 'food',
+    kakaItemKey: '',
     kakaLevelIncrement() {
 
         if (kakaLevelStore.kakaLevel.length < 6) {
-            kakaLevelStore.kakaItemKey =  kakaLevelStore.kakaLevelKey + ( kakaLevelStore.kakaLevelIndex + 1)
+            kakaLevelStore.kakaItemKey = kakaLevelStore.kakaLevelKey + (kakaLevelStore.kakaLevelIndex + 1)
             kakaLevelStore.kakaLevel.push(<KakaItem key={kakaLevelStore.kakaItemKey}/>);
             kakaLevelStore.kakaLevelIndex++
             kakaLevelStore.PukingSound.play()
             cloudWithTextStore.textInCloudChange("время убирать какахи")
             emotionStore.changeEmotion()
         } else if (kakaLevelStore.kakaLevel.length == 6) {
-            kakaLevelStore.kakaItemKey =  kakaLevelStore.kakaLevelKey + ( kakaLevelStore.kakaLevelIndex + 1)
+            kakaLevelStore.kakaItemKey = kakaLevelStore.kakaLevelKey + (kakaLevelStore.kakaLevelIndex + 1)
             kakaLevelStore.kakaLevel.push(<KakaItem key={kakaLevelStore.kakaItemKey}/>);
             kakaLevelStore.kakaLevelIndex++
             kakaLevelStore.PukingSound.play()
@@ -46,7 +46,7 @@ const kakaLevelStore = observable({
                 //achievementsStore.isShow = 'show'
                 achievementsStore.showAchievement()
                 achievementsStore.isUnlocked = 1
-                console.log(achievementsStore.isShow +'kkkkk')
+                console.log(achievementsStore.isShow + 'kkkkk')
             }
             // achievementsStore.cleanedKakasCount++
         } else if (kakaLevelStore.kakaLevel.length == 0) {

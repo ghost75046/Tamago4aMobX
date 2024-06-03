@@ -9,7 +9,6 @@ import Emotion from "./stats/Emotion";
 import eggStore from "../store/eggStore";
 
 
-
 const MyEgg = () => {
     return (
         <div className='myEgg' style={{

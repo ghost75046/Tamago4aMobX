@@ -1,8 +1,9 @@
 .popup-container {
   display: none;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 90%;
+  left: 90%;
+
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -16,11 +17,13 @@
 }
 
 .popup {
-  max-width: 300px;
+  //max-width: 300px;
+  width: 300px;
   margin: 0 auto;
   //text-align: center;
   display: flex;
-img {
-  margin-right: 15px;
-}
+
+  img {
+    margin-right: 15px;
+  }
 }
