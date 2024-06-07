@@ -2,15 +2,15 @@ import React from "react";
 import './Achievement.css'
 import {observer} from "mobx-react-lite";
 import achievementCleaner from "../../images/achievementCleaner.png"
-import achievementsStore from "../../store/popupStore";
+import achievementsStoreCleaner from "../../store/achievements/achievementsStoreCleaner";
 
 const Achievements = () => {
 //управление заполнением прогрессбара
     //стор вывести в отдельный файл, сделать универсально под разные ачивки
     // и еще чтобы при наведении мыши появлялся текст, объясняющий за что ачивку дают и показывающий название ачивки как в стиме. После получения ачивки нужно всплывающее уведомление
-    let progressbarPercent = achievementsStore.cleanedKakasCount * 10
+    let progressbarPercent = achievementsStoreCleaner.Count * 10
     //управление насыщенностью иконки
-    let saturatePercent = achievementsStore.isUnlocked
+    let saturatePercent = achievementsStoreCleaner.isUnlocked
     return (<div className="achievementContainer">
             <div className="achievementItem">
 
@@ -40,7 +40,7 @@ const Achievements = () => {
 
                     }}>
                         <div className="cleanedKakasCount">
-                            {achievementsStore.cleanedKakasCount}/10
+                            {achievementsStoreCleaner.Count}/10
                         </div>
                     </div>
 

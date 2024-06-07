@@ -6,7 +6,7 @@ import crispsCrunch from "../audio/crispsCrunch.mp3";
 import kakaLevelStore from "./kakaLevelStore";
 import cloudWithTextStore from "./cloudWithTextStore";
 import emotionStore from "./emotionStore";
-import achievementsStore from "../store/achievementsStore"
+
 
 
 const foodLevelStore = observable({
@@ -23,7 +23,7 @@ const foodLevelStore = observable({
             foodLevelStore.eatingSound.play()
             cloudWithTextStore.textInCloudChange("Спасибо за еду!")
             emotionStore.changeEmotion()
-            foodLevelStore.foodItemIncrement()
+            // foodLevelStore.foodItemIncrement()
             if (kakaLevelStore.kakaLevel.length < 7) {
                 setTimeout(kakaLevelStore.kakaLevelIncrement, 5000);
                 emotionStore.changeEmotion()
@@ -44,24 +44,25 @@ const foodLevelStore = observable({
         if (foodLevelStore.foodLevel.length < 3) {
             cloudWithTextStore.textInCloudChange("Я голоден")
         }
-    },
-    foodItemCount: 0,
-    foodItemIncrement() {
-        console.log(foodLevelStore.foodItemCount)
-        let achievementsStoreIndex
-        foodLevelStore.foodItemCount += 1
-        if (foodLevelStore.foodItemCount === 3) {
-            for (achievementsStoreIndex in achievementsStore) {
-                if (achievementsStore[achievementsStoreIndex].title == 'Кормилец') {
-                    achievementsStore[achievementsStoreIndex].isUnlocked = true
-                    // alert('Celaner')
-                    //popupStore.showAchievement()
-                    console.log('success')
-                    console.log(achievementsStore[2])
-                }
-            }
-        }
-    }
+     }
+        // ,
+    // foodItemCount: 0,
+    // foodItemIncrement() {
+    //     console.log(foodLevelStore.foodItemCount)
+    //     let achievementsStoreIndex
+    //     foodLevelStore.foodItemCount += 1
+    //     if (foodLevelStore.foodItemCount === 3) {
+    //         for (achievementsStoreIndex in achievementsStoreCleaner) {
+    //             if (achievementsStoreCleaner[achievementsStoreIndex].title == 'Кормилец') {
+    //                 achievementsStoreCleaner[achievementsStoreIndex].isUnlocked = true
+    //                 // alert('Celaner')
+    //                 //popupStore.showAchievement()
+    //                 console.log('success')
+    //                 console.log(achievementsStoreCleaner[2])
+    //             }
+    //         }
+    //     }
+    // }
 })
 setInterval(foodLevelStore.makingHungry, 7000);
 setInterval(foodLevelStore.isHungry, 5000);

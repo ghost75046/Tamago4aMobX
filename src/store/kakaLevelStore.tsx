@@ -5,7 +5,7 @@ import PukSound from "../audio/Puk.mp3";
 import cloudWithTextStore from "./cloudWithTextStore";
 import cleanerSound from "../audio/cleanerMusic.mp3";
 import emotionStore from "./emotionStore";
-import achievementsStore from "./popupStore";
+import achievementsStoreCleaner from "./achievements/achievementsStoreCleaner";
 
 
 const kakaLevelStore = observable({
@@ -36,19 +36,19 @@ const kakaLevelStore = observable({
     kakaCleaner() {
 
         if (kakaLevelStore.kakaLevel.length > 0) {
-            console.log(achievementsStore.cleanedKakasCount + ' kaka number ' + achievementsStore.isShow)
+            console.log(achievementsStoreCleaner.Count + ' kaka number ' + achievementsStoreCleaner.isShow)
             kakaLevelStore.kakaLevel.pop()
-            achievementsStore.cleanedKakasCount++
+            achievementsStoreCleaner.Count++
             kakaLevelStore.CleaningSound.play()
             cloudWithTextStore.textInCloudChange("Спасибо за уборку!")
             emotionStore.changeEmotion()
-            if (achievementsStore.cleanedKakasCount == 10) {
-                //achievementsStore.isShow = 'show'
-                achievementsStore.showAchievement()
-                achievementsStore.isUnlocked = 1
-                console.log(achievementsStore.isShow + 'kkkkk')
+            if (achievementsStoreCleaner.Count == 10) {
+                //achievementsStoreCleaner.isShow = 'show'
+                achievementsStoreCleaner.showAchievement()
+                achievementsStoreCleaner.isUnlocked = 1
+                console.log(achievementsStoreCleaner.isShow + 'kkkkk')
             }
-            // achievementsStore.cleanedKakasCount++
+
         } else if (kakaLevelStore.kakaLevel.length == 0) {
             cloudWithTextStore.textInCloudChange("Здесь уже чисто")
             emotionStore.changeEmotion()

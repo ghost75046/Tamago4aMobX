@@ -1,18 +1,17 @@
 import React from 'react';
-import './Popup.css'; // Подключаем файл стилей
+import './AchievementPopup.css'; // Подключаем файл стилей
 import achievementCleaner from "../../images/achievementCleaner.png"
-
-import achievementsStore from "../../store/popupStore";
+import achievementsStoreCleaner from "../../store/achievements/achievementsStoreCleaner";
 import {observer} from "mobx-react-lite";
 
 
-const Popup = () => {
+const AchievementPopup = () => {
 
 
     return (
         <div>
             <button>getAchievement</button>
-            <div className={"popup-container " + achievementsStore.isShow}>
+            <div className={"popup-container " + achievementsStoreCleaner.isShow}>
                 <div className="popup">
                     <img src={achievementCleaner} alt="" style={{height: '60px'}}/>
                     <p>Получено достижение <b>Чистильщик</b></p>
@@ -22,4 +21,4 @@ const Popup = () => {
     );
 };
 
-export default observer(Popup)
+export default observer(AchievementPopup);

@@ -3,7 +3,8 @@ import './MainPage.css'
 import MyEgg from "./MyEgg";
 import DarkTheme from "./DarkTheme";
 import CatFact from "./stats/CatFact/CatFact";
-import Popup from "./test/Popup"
+import Achievement from "./test/AchievementPopup";
+import AchievementGamerPopup from "./test/AchievementGamerPopup";
 
 const MainPage = () => {
 
@@ -16,7 +17,8 @@ const MainPage = () => {
                 <MyEgg/>
                 <CatFact/>
             </div>
-            <Popup/>
+            <Achievement/>
+            <AchievementGamerPopup/>
 
         </div>
 
