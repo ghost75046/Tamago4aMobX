@@ -1,4 +1,5 @@
 import {observable} from "mobx";
+import achievementUnlocked from "../audio/achievementUnlocked.mp3";
 
 
 const achievementsStore = observable(
@@ -9,9 +10,12 @@ const achievementsStore = observable(
         isVisible: false,
         cleanedKakasCount: 0,
         isShow: '?',
+
+        achievementSound:  new Audio(achievementUnlocked),
         //isVisible:true,
         showAchievement() {
             achievementsStore.isShow = 'show'
+                achievementsStore.achievementSound.play()
             achievementsStore.isVisibleTimeout()
             console.log(' showAchievement')
         },
@@ -20,7 +24,7 @@ const achievementsStore = observable(
             console.log('makeIsVisibleFalse')
         },
         isVisibleTimeout() {
-            setTimeout(achievementsStore.makeIsVisibleFalse, 2000)
+            setTimeout(achievementsStore.makeIsVisibleFalse, 3000)
             console.log('isVisibleTimeout')
         }
     }
