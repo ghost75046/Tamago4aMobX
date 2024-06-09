@@ -38,9 +38,9 @@ petNameStore.petName=myPetName
 
 
         <label>
-            Введи имя питомца:
+            Напиши имя питомца на бирке
         </label>
-        <button type="submit" onClick={hideForm}>Отправить</button>
+        <button type="submit" onClick={hideForm}>Написал</button>
         {/*<button type="submit" onClick={() => navigate('/')}>Отправить2</button>*/}
 
     </form>
