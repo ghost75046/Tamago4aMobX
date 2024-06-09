@@ -4,6 +4,7 @@ import Achievements from "./components/stats/Achievement";
 import {Route, Routes, Link} from 'react-router-dom';
 import MainPage from "./components/MainPage";
 import NotFound from "./components/NotFound";
+import PetForm from "./components/stats/PetForm";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
                 <Route path="/" element={<MainPage/>}/>
                 <Route path="/achievements" element={<Achievements/>}/>
                 <Route path="*" element={<NotFound/>}/>
+                <Route path="/login" element={<PetForm/>}/>
             </Routes>
 
 

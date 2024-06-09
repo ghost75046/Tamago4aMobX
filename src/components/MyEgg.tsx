@@ -7,6 +7,7 @@ import CloudWithText from "./CloudWithText";
 import Pet from "./Pet";
 import Emotion from "./stats/Emotion";
 import eggStore from "../store/eggStore";
+import petNameStorage from "../store/petNameStorage";
 
 
 const MyEgg = () => {
@@ -29,7 +30,7 @@ const MyEgg = () => {
             <Kaka/>
             <Emotion/>
             <GamingButtons/>
-
+            <p>{petNameStorage.petName}</p>
         </div>
     )
 }
