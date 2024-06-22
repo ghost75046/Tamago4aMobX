@@ -1,6 +1,7 @@
 import {observable} from "mobx";
 import cloudWithTextStore from "./cloudWithTextStore";
 import meowSound from "../audio/Meow.mp3";
+import angryMeowSound from "../audio/angryMeow.mp3";
 import emotionStore from "./emotionStore";
 import achievementsStoreGamer from "./achievements/achievementsStoreGamer";
 
@@ -25,8 +26,10 @@ const playingStore = observable({
     needToPlay() {
         playingStore.ifPlayedRecently = false
         cloudWithTextStore.textInCloudChange("Поиграй со мной")
+        playingStore.angryMeowSound.play()
     },
     meowSound: new Audio(meowSound),
+    angryMeowSound: new Audio(angryMeowSound)
 
 
 })

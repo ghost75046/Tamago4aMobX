@@ -6,6 +6,7 @@ import crispsCrunch from "../audio/crispsCrunch.mp3";
 import kakaLevelStore from "./kakaLevelStore";
 import cloudWithTextStore from "./cloudWithTextStore";
 import emotionStore from "./emotionStore";
+import angryMeowSound from "../audio/angryMeow.mp3";
 
 
 
@@ -33,6 +34,7 @@ const foodLevelStore = observable({
         }
     },
     eatingSound: new Audio(crispsCrunch),
+    angryMeowSound: new Audio(angryMeowSound),
     makingHungry() {
 
         if (foodLevelStore.foodLevel.length > 1) {
@@ -43,6 +45,8 @@ const foodLevelStore = observable({
     isHungry() {
         if (foodLevelStore.foodLevel.length < 3) {
             cloudWithTextStore.textInCloudChange("Я голоден")
+            foodLevelStore.angryMeowSound.play()
+
         }
      }
         // ,
