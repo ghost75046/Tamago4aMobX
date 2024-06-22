@@ -22,7 +22,7 @@ function PetForm() {
 
     function hideForm () {
 petNameStore.petName=myPetName
-        navigate('/')
+        navigate('/game')
 
     }
 

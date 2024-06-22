@@ -12,16 +12,16 @@ const App = () => {
     return (
         <div>
             <header className='navBar'>
-                <Link className='navBarLink' to="/">Игра </Link>
+                <Link className='navBarLink' to="/game">Игра </Link>
                 <Link className='navBarLink' to="/achievements">Достижения </Link>
                 <Link className='navBarLink' to="/about">Несуществующая страница</Link>
             </header>
 
             <Routes>
-                <Route path="/" element={<MainPage/>}/>
+                <Route path="/game" element={<MainPage/>}/>
                 <Route path="/achievements" element={<Achievements/>}/>
                 <Route path="*" element={<NotFound/>}/>
-                <Route path="/login" element={<PetForm/>}/>
+                <Route path="/" element={<PetForm/>}/>
             </Routes>
 
 
