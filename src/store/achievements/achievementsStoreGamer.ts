@@ -10,6 +10,7 @@ const achievementsStoreGamer = observable(
         isVisible: false,
         Count: 0,
         isShow: '?',
+        // isShow: 'show',
 
         achievementSound:  new Audio(achievementUnlocked),
         //isVisible:true,

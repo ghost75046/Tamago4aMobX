@@ -1,7 +1,8 @@
 import {observable} from "mobx";
 import day from "../images/day.jpg";
 import night from "../images/night.jpg";
-import defaultEgg from "../images/defaultEggneNoGlass2.png"
+//import defaultEgg from "../images/defaultEggneNoGlass2.png"
+import defaultEgg from "../images/defaultEggneNoGlass3.png"
 
 
 const eggStore = observable({

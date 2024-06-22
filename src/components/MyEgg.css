@@ -13,3 +13,23 @@
   justify-content: space-between; }
 
 /*# sourceMappingURL=MyEgg.css.map */
+
+.petName {
+  /*position: absolute;*/
+  /*position: fixed;*/
+  /*top: 78%;*/
+  /*left: 45%;*/
+  /*border: 1px solid black;*/
+margin: 0 auto
+
+}
+
+.dogtagSingle {
+  margin-left: 230px;
+  margin-top: -10px;
+  /*border: 1px solid black;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
