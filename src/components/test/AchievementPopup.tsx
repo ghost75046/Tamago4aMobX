@@ -10,7 +10,7 @@ const AchievementPopup = () => {
 
     return (
         <div>
-            <button>getAchievement</button>
+
             <div className={"popup-container " + achievementsStoreCleaner.isShow}>
                 <div className="popup">
                     <img src={achievementCleaner} alt="" style={{height: '60px'}}/>
