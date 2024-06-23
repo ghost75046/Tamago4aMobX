@@ -4,6 +4,7 @@ import {observer} from "mobx-react-lite";
 
 import AchievementGamer from "./AchievementGamer";
 import AchievementCleaner from "./AchievementCleaner";
+import AchievementExpert from "./AchievementExpert";
 
 
 const Achievements = () => {
@@ -12,7 +13,7 @@ const Achievements = () => {
         <div className='achievementGrid'>
             <AchievementCleaner/>
             <AchievementGamer/>
-
+            <AchievementExpert/>
 
 
             </div>

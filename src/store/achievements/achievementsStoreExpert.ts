@@ -2,37 +2,37 @@ import {observable} from "mobx";
 import achievementUnlocked from "../../audio/achievementUnlocked.mp3";
 
 
-const achievementsStoreGamer = observable(
+const achievementsStoreExpert = observable(
     {
-        id: 3,
-        title: 'Игрок', //убрать 10 каках
+        id: 4,
+        title: 'Знаток', //убрать 10 каках
         isUnlocked: 0,
         isVisible: false,
         Count: 0,
         isShow: '?',
-  // isShow: 'show',
+        // isShow: 'show',
 
         achievementSound:  new Audio(achievementUnlocked),
         //isVisible:true,
         showAchievement() {
-            achievementsStoreGamer.isShow = 'show'
-            achievementsStoreGamer.achievementSound.play()
-            achievementsStoreGamer.isVisibleTimeout()
+            achievementsStoreExpert.isShow = 'show'
+            achievementsStoreExpert.achievementSound.play()
+            achievementsStoreExpert.isVisibleTimeout()
             console.log(' showAchievement')
         },
         makeIsVisibleFalse() {
-            achievementsStoreGamer.isShow = '?'
+            achievementsStoreExpert.isShow = '?'
             console.log('makeIsVisibleFalse')
         },
         isVisibleTimeout() {
-            setTimeout(achievementsStoreGamer.makeIsVisibleFalse, 3000)
+            setTimeout(achievementsStoreExpert.makeIsVisibleFalse, 3000)
             console.log('isVisibleTimeout')
         }
     }
 )
 
 
-export default achievementsStoreGamer
+export default achievementsStoreExpert
 
 
 

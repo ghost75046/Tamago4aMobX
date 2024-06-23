@@ -5,6 +5,7 @@ import DarkTheme from "./DarkTheme";
 import CatFact from "./stats/CatFact/CatFact";
 import Achievement from "./test/AchievementPopup";
 import AchievementGamerPopup from "./test/AchievementGamerPopup";
+import AchievementExpertPopup from "./test/AchievementExpertPopup";
 
 
 const MainPage = () => {
@@ -20,6 +21,8 @@ const MainPage = () => {
             </div>
             <Achievement/>
             <AchievementGamerPopup/>
+            <AchievementExpertPopup/>
+
 
 
         </div>
