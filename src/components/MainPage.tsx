@@ -3,7 +3,7 @@ import './MainPage.css'
 import MyEgg from "./MyEgg";
 import DarkTheme from "./DarkTheme";
 import CatFact from "./stats/CatFact/CatFact";
-import Achievement from "./test/AchievementPopup";
+import Achievement from "./test/AchievementCleanerPopup";
 import AchievementGamerPopup from "./test/AchievementGamerPopup";
 import AchievementExpertPopup from "./test/AchievementExpertPopup";
 
