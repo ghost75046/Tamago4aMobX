@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.catFact {
+  width: 250px;
+  margin-right: 15px; }
+
+.image-button {
+  /* Установите размеры кнопки */
+  width: 223px;
+  height: 200px;
+  /* Установите фоновое изображение */
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("/src/images/catHand.png");
+  /* Другие свойства */
+  border: none;
+  cursor: pointer;
+  background-size: contain;
+  backgroundRepeat: no-repeat; }
+
+.factText {
+  background-color: gray;
+  border-radius: 5px; }
+
+/*# sourceMappingURL=CatFact.css.map */

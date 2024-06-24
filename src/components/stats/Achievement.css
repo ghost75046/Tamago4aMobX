@@ -1,0 +1,45 @@
+body {
+  background-color: antiquewhite; }
+
+.achievementGrid {
+  display: flex;
+  flex-direction: row; }
+
+.achievementItem {
+  margin: 15px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; }
+
+.achievementIcon {
+  width: 150px;
+  margin-bottom: 15px; }
+
+.hover-text {
+  visibility: hidden;
+  width: 250px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 200px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.achievementItem:hover .hover-text {
+  visibility: visible; }
+
+.cleanedKakasCount {
+  position: absolute;
+  top: 89%;
+  left: 46%; }
+
+/*# sourceMappingURL=Achievement.css.map */

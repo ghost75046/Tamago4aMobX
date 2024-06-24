@@ -1,0 +1,30 @@
+.PetForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.PetFormInput {
+  position: absolute;
+  margin-top: 510px;
+  margin-right: 85px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: center; }
+
+.hiddenClass {
+  visibility: hidden; }
+
+img {
+  margin-top: 50px; }
+
+input {
+  margin-bottom: 120px;
+  text-align: center; }
+
+button {
+  margin-top: 15px; }
+
+/*# sourceMappingURL=PetForm.css.map */
