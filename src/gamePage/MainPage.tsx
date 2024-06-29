@@ -24,7 +24,6 @@ const MainPage = () => {
             <AchievementExpertPopup/>
 
 
-
         </div>
 
 

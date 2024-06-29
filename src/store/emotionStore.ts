@@ -5,7 +5,7 @@ import sad from "../images/emotionSad.png"
 import foodLevelStore from "./foodLevelStore";
 import kakaLevelStore from "./kakaLevelStore";
 import playingStore from "./playingStore";
-import Mrrr from "../audio/Mrrr.mp3";
+import Mrrr from "../audio/mrrrSound.mp3";
 
 
 const emotionStore = observable({

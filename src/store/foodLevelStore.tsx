@@ -2,12 +2,11 @@ import {observable} from "mobx";
 import FoodItem from "../components/stats/Food/FoodItem";
 
 import React from "react";
-import crispsCrunch from "../audio/crispsCrunch.mp3";
+import crispsCrunch from "../audio/feederSound.mp3";
 import kakaLevelStore from "./kakaLevelStore";
 import cloudWithTextStore from "./cloudWithTextStore";
 import emotionStore from "./emotionStore";
-import angryMeowSound from "../audio/angryMeow.mp3";
-
+import angryMeowSound from "../audio/angryMeowSound.mp3";
 
 
 const foodLevelStore = observable({
@@ -48,8 +47,8 @@ const foodLevelStore = observable({
             foodLevelStore.angryMeowSound.play()
 
         }
-     }
-        // ,
+    }
+    // ,
     // foodItemCount: 0,
     // foodItemIncrement() {
     //     console.log(foodLevelStore.foodItemCount)

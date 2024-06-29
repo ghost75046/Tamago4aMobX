@@ -16,7 +16,7 @@ const Achievements = () => {
             <AchievementExpert/>
 
 
-            </div>
+        </div>
     )
 }
 

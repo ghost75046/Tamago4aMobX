@@ -8,7 +8,7 @@ const Achievements = () => {
 //управление заполнением прогрессбара
     //стор вывести в отдельный файл, сделать универсально под разные ачивки
     // и еще чтобы при наведении мыши появлялся текст, объясняющий за что ачивку дают и показывающий название ачивки как в стиме. После получения ачивки нужно всплывающее уведомление
-    let progressbarPercent = (achievementsStoreExpert.Count<11) ? achievementsStoreExpert.Count * 10 : 100
+    let progressbarPercent = (achievementsStoreExpert.Count < 11) ? achievementsStoreExpert.Count * 10 : 100
     //управление насыщенностью иконки
     let saturatePercent = achievementsStoreExpert.isUnlocked
     return (
@@ -43,7 +43,7 @@ const Achievements = () => {
 
                     }}>
                         <div className="cleanedKakasCount">
-                            {(achievementsStoreExpert.Count<11) ? achievementsStoreExpert.Count : 10}/10
+                            {(achievementsStoreExpert.Count < 11) ? achievementsStoreExpert.Count : 10}/10
                         </div>
                     </div>
 

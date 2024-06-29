@@ -1,7 +1,7 @@
 import {observable} from "mobx";
 import cloudWithTextStore from "./cloudWithTextStore";
-import meowSound from "../audio/Meow.mp3";
-import angryMeowSound from "../audio/angryMeow.mp3";
+import meowSound from "../audio/meowSound.mp3";
+import angryMeowSound from "../audio/angryMeowSound.mp3";
 import emotionStore from "./emotionStore";
 import achievementsStoreGamer from "./achievements/achievementsStoreGamer";
 
@@ -13,7 +13,7 @@ const playingStore = observable({
         playingStore.ifPlayedRecently = true
         playingStore.meowSound.play()
         achievementsStoreGamer.Count++
-        console.log(achievementsStoreGamer.Count+' gameCount')
+        console.log(achievementsStoreGamer.Count + ' gameCount')
         if (achievementsStoreGamer.Count == 10) {
             //achievementsStoreGamer.isShow = 'show'
             achievementsStoreGamer.showAchievement()

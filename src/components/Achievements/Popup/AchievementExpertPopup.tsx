@@ -6,13 +6,12 @@ import achievementsStoreExpert from "../../../store/achievements/achievementsSto
 import {useNavigate} from "react-router-dom";
 
 
-
 const AchievementGamerPopup = () => {
 
     const navigate = useNavigate();
 
-    function goToAchievements () {
-                navigate('/achievements')
+    function goToAchievements() {
+        navigate('/achievements')
 
     }
 
@@ -20,7 +19,7 @@ const AchievementGamerPopup = () => {
     return (
         <div>
 
-            <div className={"popup-container "+ achievementsStoreExpert.isShow } onClick={goToAchievements}>
+            <div className={"popup-container " + achievementsStoreExpert.isShow} onClick={goToAchievements}>
                 <div className="popup">
                     <img src={achievementExpert} alt="" style={{height: '60px'}}/>
                     <p>Получено достижение <b>Знаток</b></p>

@@ -10,10 +10,11 @@ const AchievementGamerPopup = () => {
 
     const navigate = useNavigate();
 
-    function goToAchievements () {
+    function goToAchievements() {
         navigate('/achievements')
 
     }
+
     return (
         <div>
 

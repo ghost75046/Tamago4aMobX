@@ -1,5 +1,5 @@
 import {observable} from "mobx";
-import achievementUnlocked from "../../audio/achievementUnlocked.mp3";
+import achievementUnlocked from "../../audio/achievementUnlockedSound.mp3";
 
 
 const achievementsStoreExpert = observable(
@@ -12,7 +12,7 @@ const achievementsStoreExpert = observable(
         isShow: '?',
         // isShow: 'show',
 
-        achievementSound:  new Audio(achievementUnlocked),
+        achievementSound: new Audio(achievementUnlocked),
         //isVisible:true,
         showAchievement() {
             achievementsStoreExpert.isShow = 'show'

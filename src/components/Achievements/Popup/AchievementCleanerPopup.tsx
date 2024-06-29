@@ -10,7 +10,7 @@ const AchievementCleanerPopup = () => {
 
     const navigate = useNavigate();
 
-    function goToAchievements () {
+    function goToAchievements() {
         navigate('/achievements')
 
     }

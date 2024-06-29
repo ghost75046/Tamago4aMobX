@@ -8,7 +8,7 @@ const catFactStore = observable({
     myApiKey: 'asEaqa4Xq4qMhyF',
     myLocationId: '74638',
     myLang: 'en',
-    catFactSound:  new Audio(catFactSound),
+    catFactSound: new Audio(catFactSound),
 
     gettingFact: async () => {
 

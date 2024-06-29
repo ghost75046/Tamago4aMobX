@@ -7,6 +7,7 @@ body {
   flex-direction: row;
 
 }
+
 .achievementItem {
   margin: 15px;
   width: 300px;
@@ -20,7 +21,7 @@ body {
 .achievementIcon {
   width: 150px;
   margin-bottom: 15px;
-//border: solid black 1px;
+  //border: solid black 1px;
 
 }
 
@@ -42,7 +43,7 @@ body {
   justify-content: center;
 }
 
-.achievementItem:hover  .hover-text {
+.achievementItem:hover .hover-text {
 
   visibility: visible;
 
@@ -63,7 +64,6 @@ body {
 
 
   //justify-content: center;
-
 
 
 }

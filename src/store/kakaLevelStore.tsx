@@ -1,9 +1,9 @@
 import {observable} from "mobx";
 import React from "react";
 import KakaItem from "../components/stats/Kaka/KakaItem";
-import PukSound from "../audio/Puk.mp3";
+import PukSound from "../audio/pukSound.mp3";
 import cloudWithTextStore from "./cloudWithTextStore";
-import cleanerSound from "../audio/cleanerMusic.mp3";
+import cleanerSound from "../audio/cleanerSound.mp3";
 import emotionStore from "./emotionStore";
 import achievementsStoreCleaner from "./achievements/achievementsStoreCleaner";
 
