@@ -1,11 +1,11 @@
 import React from 'react';
 import './MainPage.css'
 import MyEgg from "./MyEgg";
-import DarkTheme from "./DarkTheme";
-import CatFact from "./stats/CatFact/CatFact";
-import Achievement from "./test/AchievementCleanerPopup";
-import AchievementGamerPopup from "./test/AchievementGamerPopup";
-import AchievementExpertPopup from "./test/AchievementExpertPopup";
+import DarkTheme from "../components/svistelki/DarkTheme/DarkTheme";
+import CatFact from "../components/svistelki/CatFact/CatFact";
+import Achievement from "../components/Achievements/Popup/AchievementCleanerPopup";
+import AchievementGamerPopup from "../components/Achievements/Popup/AchievementGamerPopup";
+import AchievementExpertPopup from "../components/Achievements/Popup/AchievementExpertPopup";
 
 
 const MainPage = () => {

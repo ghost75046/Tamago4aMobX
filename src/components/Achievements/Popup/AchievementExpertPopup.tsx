@@ -1,8 +1,8 @@
 import React from 'react';
 import './AchievementPopup.css'; // Подключаем файл стилей
-import achievementExpert from "../../images/achievementExpert.png"
+import achievementExpert from "../../../images/achievementExpert.png"
 import {observer} from "mobx-react-lite";
-import achievementsStoreExpert from "../../store/achievements/achievementsStoreExpert";
+import achievementsStoreExpert from "../../../store/achievements/achievementsStoreExpert";
 import {useNavigate} from "react-router-dom";
 
 

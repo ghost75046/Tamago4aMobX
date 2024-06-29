@@ -1,6 +1,6 @@
 import React from "react";
 import './Emotion.css'
-import emotionStore from "../../store/emotionStore";
+import emotionStore from "../../../store/emotionStore";
 import {observer} from "mobx-react-lite";
 
 

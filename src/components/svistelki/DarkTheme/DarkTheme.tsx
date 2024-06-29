@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
-import darkKnight from "../images/darkKnight.png";
-import lightKnight from "../images/lightKnight.jpg";
+import darkKnight from "../../../images/darkKnight.png";
+import lightKnight from "../../../images/lightKnight.jpg";
 import './DarkTheme.css'
 
 

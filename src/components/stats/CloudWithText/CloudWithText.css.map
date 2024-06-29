@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAe;EACb,gBAAgB,EAAE,sCAAsC;EACxD,eAAe,EAAE,KAAK;EACtB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EAEnB,gBAAE;IACA,SAAS,EAAE,IAAI;IACf,UAAU,EAAE,MAAM",
+"sources": ["CloudWithText.scss"],
+"names": [],
+"file": "CloudWithText.css"
+}

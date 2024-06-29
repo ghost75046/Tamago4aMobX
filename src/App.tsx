@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css'
-import Achievements from "./components/stats/Achievement";
+import Achievements from "./components/Achievements/webPage/AchievementTable";
 import {Route, Routes, Link} from 'react-router-dom';
-import MainPage from "./components/MainPage";
-import NotFound from "./components/NotFound";
-import PetForm from "./components/stats/PetForm";
+import MainPage from "./gamePage/MainPage";
+import NotFoundPage from "./components/svistelki/NotFoundPage";
+import PetForm from "./components/petForm/PetForm";
 
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
             <Routes>
                 <Route path="/game" element={<MainPage/>}/>
                 <Route path="/achievements" element={<Achievements/>}/>
-                <Route path="*" element={<NotFound/>}/>
+                <Route path="*" element={<NotFoundPage/>}/>
                 <Route path="/" element={<PetForm/>}/>
             </Routes>
 

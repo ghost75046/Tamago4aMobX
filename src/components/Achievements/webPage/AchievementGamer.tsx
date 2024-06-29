@@ -1,8 +1,8 @@
 import React from "react";
 import './Achievement.css'
 import {observer} from "mobx-react-lite";
-import achievementGamer from "../../images/achievementGamer.png"
-import achievementsStoreGamer from "../../store/achievements/achievementsStoreGamer";
+import achievementGamer from "../../../images/achievementGamer.png"
+import achievementsStoreGamer from "../../../store/achievements/achievementsStoreGamer";
 
 const Achievements = () => {
 //управление заполнением прогрессбара

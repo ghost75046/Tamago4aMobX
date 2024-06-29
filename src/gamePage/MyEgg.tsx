@@ -1,13 +1,13 @@
-import Food from "./stats/Food/Food";
-import Kaka from "./stats/Kaka/Kaka";
+import Food from "../components/stats/Food/Food";
+import Kaka from "../components/stats/Kaka/Kaka";
 import GamingButtons from "./GamingButtons";
 import React from "react";
 import "./MyEgg.css";
-import CloudWithText from "./CloudWithText";
+import CloudWithText from "../components/stats/CloudWithText/CloudWithText";
 import Pet from "./Pet";
-import Emotion from "./stats/Emotion";
+import Emotion from "../components/stats/Emotion/Emotion";
 import eggStore from "../store/eggStore";
-import petNameStorage from "../store/petNameStorage";
+import petNameStorage from "../store/petFormStore";
 import dogtagSingle from "../images/dogtagSingleThin.png"
 
 

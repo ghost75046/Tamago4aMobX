@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {useNavigate} from  'react-router-dom';
 import './PetForm.css'
 import dogtag from '../../images/dogtag.png'
-import petNameStore from "../../store/petNameStorage";
+import petNameStore from "../../store/petFormStore";
 function PetForm() {
     // Создаем состояние для хранения имени питомца
      const [myPetName, setMyPetName] = useState('');

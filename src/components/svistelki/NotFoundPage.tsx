@@ -1,8 +1,8 @@
 import React from "react";
-import backgroundPicture from "../../src/images/NotFound.png"
+import backgroundPicture from "../../images/NotFound.png"
 
 
-const NotFound = () => {
+const NotFoundPage = () => {
     return (
         <div>
             <img src={backgroundPicture} alt=""/>
@@ -10,6 +10,6 @@ const NotFound = () => {
     )
 }
 
-export default NotFound
+export default NotFoundPage
 
 

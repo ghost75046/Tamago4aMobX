@@ -1,8 +1,8 @@
 import React from "react";
 import './Achievement.css'
 import {observer} from "mobx-react-lite";
-import achievementCleaner from "../../images/achievementCleaner.png"
-import achievementsStoreCleaner from "../../store/achievements/achievementsStoreCleaner";
+import achievementCleaner from "../../../images/achievementCleaner.png"
+import achievementsStoreCleaner from "../../../store/achievements/achievementsStoreCleaner";
 
 
 

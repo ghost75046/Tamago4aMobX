@@ -1,7 +1,7 @@
 import React from 'react';
 import './AchievementPopup.css'; // Подключаем файл стилей
-import achievementCleaner from "../../images/achievementCleaner.png"
-import achievementsStoreCleaner from "../../store/achievements/achievementsStoreCleaner";
+import achievementCleaner from "../../../images/achievementCleaner.png"
+import achievementsStoreCleaner from "../../../store/achievements/achievementsStoreCleaner";
 import {observer} from "mobx-react-lite";
 import {useNavigate} from "react-router-dom";
 
