@@ -1,6 +1,6 @@
 import {observable} from "mobx";
 import achievementsStoreExpert from "./achievements/achievementsStoreExpert";
-
+import catFactSound from "../audio/catFactSound.mp3";
 
 const catFactStore = observable({
 
@@ -8,6 +8,8 @@ const catFactStore = observable({
     myApiKey: 'asEaqa4Xq4qMhyF',
     myLocationId: '74638',
     myLang: 'en',
+    catFactSound:  new Audio(catFactSound),
+
     gettingFact: async () => {
 
 
@@ -30,9 +32,12 @@ const catFactStore = observable({
         achievementsStoreExpert.Count++
         console.log('cat count ' + achievementsStoreExpert.Count)
 
+        catFactStore.catFactSound.pause()
+        catFactStore.catFactSound.play()
         if (achievementsStoreExpert.Count == 10) {
             //achievementsStoreExpert.isShow = 'show'
             achievementsStoreExpert.showAchievement()
+
             achievementsStoreExpert.isUnlocked = 1
             console.log(achievementsStoreExpert.isShow + 'kkkkk')
         }
