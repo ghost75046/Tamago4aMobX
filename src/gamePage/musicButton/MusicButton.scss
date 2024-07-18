@@ -1,0 +1,21 @@
+.musicButton {
+  border: 3px black solid;
+  border-radius: 50px;
+  max-width: 100%; /* Задаем ширину изображения равной 100% от ширины родительского блока */
+  max-height: 100%; /* Задаем высоту изображения равной 100% от высоты родительского блока */
+  object-fit: contain; /* Обеспечиваем, чтобы изображение полностью помещалось в пределы блока */
+  margin-top: -1px;/*непонятно почему, но этот постыль работает*/
+}
+
+.musicButtonDiv {
+  position: absolute;
+  top: 85%; /* Отступ сверху */
+  left: 90%; /* Отступ слева */
+  //background-color: red;
+  width: 50px; /* Ширина блока */
+  height: 50px; /* Высота блока */
+  //overflow: hidden; /* Обрезаем содержимое, выходящее за пределы блока */
+  //display: flex; /* Используем flexbox для центрирования изображения */
+  //align-items: center; /* Вертикальное центрирование */
+  //justify-content: center;
+}

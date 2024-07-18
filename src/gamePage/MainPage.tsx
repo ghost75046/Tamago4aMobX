@@ -6,6 +6,8 @@ import CatFact from "../components/svistelki/CatFact/CatFact";
 import Achievement from "../components/Achievements/Popup/AchievementCleanerPopup";
 import AchievementGamerPopup from "../components/Achievements/Popup/AchievementGamerPopup";
 import AchievementExpertPopup from "../components/Achievements/Popup/AchievementExpertPopup";
+import MusciButton from "./musicButton/MusicButton";
+
 
 
 const MainPage = () => {
@@ -22,7 +24,7 @@ const MainPage = () => {
             <Achievement/>
             <AchievementGamerPopup/>
             <AchievementExpertPopup/>
-
+            <MusciButton/>
 
         </div>
 

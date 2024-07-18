@@ -21,3 +21,11 @@
 Если хочешь узнать факт о котах - жми на лапку))
 
 GL HF ))
+
+
+Как запустить?
+
+1) git clone 'https://github.com/ghost75046/Tamago4aMobX.git'
+2) cd Tamago4aMobX
+3) npm install
+4) npm start
