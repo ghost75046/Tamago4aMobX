@@ -4,6 +4,7 @@ import meowSound from "../audio/meowSound.mp3";
 import angryMeowSound from "../audio/angryMeowSound.mp3";
 import emotionStore from "./emotionStore";
 import achievementsStoreGamer from "./achievements/achievementsStoreGamer";
+import petFormStore from "./petFormStore";
 
 
 const playingStore = observable({
@@ -24,9 +25,11 @@ const playingStore = observable({
         emotionStore.changeEmotion()
     },
     needToPlay() {
-        playingStore.ifPlayedRecently = false
-        cloudWithTextStore.textInCloudChange("Поиграй со мной")
-        playingStore.angryMeowSound.play()
+        if(petFormStore.petName !== 'default') { // Здесь petFormStore.petName !== 'default' нужно чтобы избежать ошибки проигрывания аудио раньше взаимоедйствия юзера со страницей
+            playingStore.ifPlayedRecently = false
+            cloudWithTextStore.textInCloudChange("Поиграй со мной")
+            playingStore.angryMeowSound.play()
+        }
     },
     meowSound: new Audio(meowSound),
     angryMeowSound: new Audio(angryMeowSound)

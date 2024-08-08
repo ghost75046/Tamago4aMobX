@@ -7,6 +7,7 @@ import kakaLevelStore from "./kakaLevelStore";
 import cloudWithTextStore from "./cloudWithTextStore";
 import emotionStore from "./emotionStore";
 import angryMeowSound from "../audio/angryMeowSound.mp3";
+import petFormStore from "./petFormStore";
 
 
 const foodLevelStore = observable({
@@ -42,7 +43,7 @@ const foodLevelStore = observable({
         emotionStore.changeEmotion()
     },
     isHungry() {
-        if (foodLevelStore.foodLevel.length < 3) {
+        if ((foodLevelStore.foodLevel.length < 3) && (petFormStore.petName !== 'default')) { // Здесь petFormStore.petName !== 'default' нужно чтобы избежать ошибки проигрывания аудио раньше взаимоедйствия юзера со страницей
             cloudWithTextStore.textInCloudChange("Я голоден")
             foodLevelStore.angryMeowSound.play()
 
